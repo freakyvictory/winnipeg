@@ -1,12 +1,11 @@
 
-
 /* lato-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
 }
 /* lato-700 - latin */
 @font-face {
@@ -40,12 +39,211 @@ body{
   color: black;
 }
 
+/*header styles start*/
+
+.header{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+}
+
 .wrapper{
   max-width: 1060px;
   margin:0 auto;
 }
-
-.winnipeg{
-  width:170px;
-  heigth: auto;
+.header__logo{
+  display: flex;
+  align-items: center;
 }
+.imagewinnipeg{
+  width: 150px;
+  height: auto;
+}
+
+
+.header__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 10px;
+  
+}
+
+.header__list{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.header__item{
+  margin-right: 82px;
+  margin-bottom: 8px;
+
+}
+
+.header__item:last-child{
+  margin-right: 0;
+}
+
+.header__link{
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.header__link:hover, .header__link:focus, .header__link:active{
+opacity: .75;
+}
+
+/*header styles end*/
+
+/*intro styles start*/
+.intro{
+  padding-top: 263px;
+  min-height: 100vh;
+  background: url("/img/winnipeglinear.jpg") no-repeat center;
+background-size: cover;
+padding-bottom: 300px;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 500;
+  color: aliceblue;
+  margin-bottom: 20px;
+  max-width: 619px;
+}
+
+.intro__subtitle{
+  color: aliceblue;
+  
+  margin-bottom: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 546px;
+}
+
+
+.search-form__info{
+  display: flex;
+
+
+}
+
+.search-form__field{
+  width: 297px;
+    background:transparent url("/img/circle-ico.svg") no-repeat left 8px;
+  background-size: 20px;
+border: 0;
+border-bottom: 2px solid whitesmoke;
+margin-right: 60px;
+padding-left: 43px;
+padding-bottom: 22px;
+font-weight: 500px;
+font-size: 18px;
+color: aliceblue;
+}
+
+.search-form__field::placeholder{
+  font-weight: 500px;
+font-size: 18px;
+color: aliceblue;
+}
+
+.search-form__submit{
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  color: aliceblue;
+  background-color: #1b7dff;
+  border: 0;
+}
+
+.search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active{
+background-color:  #0a59c0;;
+}
+/*intro styles end*/
+
+/*benefits styles start*/
+
+
+
+
+
+.benefits__wrap{
+  max-width: 1262px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  position: relative;
+}
+
+
+
+.benefits__title{
+  width: 100%;
+font-size: 35px;
+font-weight: 500;
+line-height: 42px;
+padding: 93px 100px 88px 100px;
+position: absolute;
+top:0;
+left:0;
+transform: translateY(-100%);
+background-color: white;
+
+}
+
+.benefits__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding:0 100px;
+
+}
+
+.benefits__card{
+  grid-column: span 1;
+}
+
+
+.picture-of-table{
+  width: 65px;
+  height: 65px;
+}
+
+.benefits__card-pic{
+  margin-bottom:37px ;
+ 
+}
+
+img{
+  max-width: 100%;
+  height:auto
+}
+
+.benefits__card-thumb{
+  display: block;
+  width:65px;
+  height: 65px;
+}
+
+.benefits__card-title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.benefits__card-desc{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+
+/*benefits styles end*/

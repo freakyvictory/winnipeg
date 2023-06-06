@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,109 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="header">                    
+  <header class="header">
     <div class="wrapper">
       <div class="header__wrapper">
         <div class="header__logo">
           <a href="" class="header__logo-link">
-            <img class="winnipeg" src="./img/Screenshot 2023-05-30 200955.png" alt="logo ">
+            <img class="imagewinnipeg" src="./img/goldwinnipeg.svg" alt="logo ">
           </a>
         </div>
-  
-        <nav class="header-nav"> 
+
+        <nav class="header-nav">
           <ul class="header__list">
             <li class="header__item">
               <a href="#" class="header__link">Articles</a>
+            </li>
+            <li class="header__item">
               <a href="#" class="header__link">Locations</a>
+            </li>
+            <li class="header__item">
               <a href="#" class="header__link">Videos</a>
-              <a href="#" class="header__link">Sign in </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Sign In</a>
             </li>
           </ul>
         </nav>
       </div>
-    </div> 
+    </div>
+  </header>
 
-  
-  </div>
-  
+  <main class="main">
+    <section class="intro">
+      <div class="wrapper">
+        <h1> Discover Amazing Places in Winnipeg</h1>
+        <p class="intro__subtitle">Unleash your wanderlust in Winnipeg, a city teeming with diverse cultural heritage,
+          enchanting historical sites, and breathtaking nature. Experience an unforgettable journey.</p>
+
+        <form class="search-form">
+          <fieldset class="search-form__wrap">
+            <p class="search-form__info">
+              <input type="text" name="user-like-to-do" class="search-form__field"
+                placeholder="What would you like to do?">
+              <input type="text" name="user-like-to-go" class="search-form__field"
+                placeholder="Where would you like to go?">
+              <button type="submit" class="search-form__submit">search</button>
+            </p>
+          </fieldset>
+        </form>
+
+
+      </div>
+
+    </section>
+
+    <section class="benefits">
+      <div class="benefits__wrap">
+        <h2 class="benefits__title">How Can You Use This Website
+
+        </h2>
+        <div class="benefits__cards">
+          <div class="benefits__card">
+            <div class="benefits__card-pic">
+              <img src="/img/person-ico.svg" alt="guide" class="benefits__card-thumb">
+            </div>
+            <div class="benefits__card-title">"Your Personal Guide"</div>
+            
+            <div class="benefits__card-desc">"Unravel the hidden gems of Winnipeg with us as your personal guide. We offer
+              comprehensive, up-to-date, and insider information about all that Winnipeg has to offer. Navigate
+              effortlessly through must-see attractions, local cuisines, hidden art alleys, stunning parks, and more.
+              Tailor your itinerary to your interests and let our site be your compass in this city of wonders."
+            </div>
+            <a href="#" class="benefits__card-more">LEARN MORE</a>
+          </div>
+          
+          
+          <div class="benefits__card">
+            <div class="benefits__card-pic">
+              <img src="/img/building-ico.svg" alt="building" class="benefits__card-thumb">
+            </div>
+              <div class="benefits__card-title">"Experience Local"</div>
+              <div class="benefits__card-desc">"Immerse yourself in Winnipeg's vibrant community by exploring our local businesses section. Uncover an array of unique boutiques, local eateries, artisanal markets, and more. Shop, eat, and live like a local. Support the community while experiencing the authenticity of Winnipeg."
+
+              </div>
+              <a href="#" class="benefits__card-more">LEARN MORE</a>
+          </div>
+
+          <div class="benefits__card">
+            <div class="benefits__card-pic">
+              <img class="picture-of-table" src="/img/pngwing 1 1.jpg" alt="table" class="benefits__card-thumb">
+            </div>
+              <div class="benefits__card-title">"Plan Your Visit"</div> 
+              <div class="benefits__card-desc">"Plan your visit with ease using our integrated map and scheduling tool. Choose from a list of attractions, restaurants, shops, and events, then add them to your personalized itinerary. View your selections on a map, and get recommendations based on your preferences. Make your Winnipeg adventure uniquely yours."
+
+              </div>
+              <a href="#" class="benefits__card-more">LEARN MORE</a>
+          </div>
+        </div>
+    </section>
+  </main>
+
+
+
 </body>
+
 </html>
