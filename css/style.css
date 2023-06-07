@@ -319,14 +319,17 @@ img{
   transition: .5s;
 }
 .read-more-checker ~ .read-more-button:before {
-  content: 'More ';
+  content: 'MORE ';
   padding-right: 39px;
+  color: #0a59c0;
+  font-size: 16px;
 
   background: url(/img/arrow-right-ico.svg) no-repeat right center;
 }
 .read-more-checker:checked ~ .read-more-button:before {
-  content: 'Less ';
+  content: 'LESS ';
   padding-right: 39px;
+  font-size: 16px;
   width: 100px;
   background: url(/img/arrow-right-ico.svg) no-repeat 95% center;
 }
@@ -340,12 +343,132 @@ img{
 
 /* places styles start*/
 
-.places__title{
+.places{
+  margin-bottom: 131px;
+}
+.places__caption{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 36px;
+}              
 
+.places__title{
+  margin-right: 15px;
+  }
+  
+.places__view-all{
+  color: #0a59c0;
+  font-size: 16px;
+  padding-right: 40px;
+  text-decoration: none;
+  background: url(/img/arrow-right-ico.svg) no-repeat right center;
 }
 
 
+
+  .places__view-all:hover, .places__view-all:focus {
+    opacity: .65;
+
+}
+
+.places__cards{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap:10px;
+}
+
+.places__card{
+  position: relative;
+  overflow: hidden;
+}
+
+.places__card::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.places__card:hover .places__card-pic{
+  transform:scale(1.05)
+
+}
+
+.places__card_size_lg{
+  grid-column: span 3;
+}
+
+.places__card_size_sm{
+  grid-column: span 2;
+}
+
+
+
+.places__card-pic{
+ 
+  width: 100%;
+  transition: .15s all;
+}
+
+.places__card-title{
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+}
+
+.places__card-link{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+
+}
+
+.places__card-pic_size_lg {
+  height: 354px;
+  object-fit:cover;
+
+}
+
+.places__card_size_sm{
+  height: 283px;
+  object-fit:cover;
+
+
+
+}
 /* places styles end*/
 
+
+/*tours styles start*/
+
+.tours{
+  margin-bottom: 139px;
+}
+
+  .tours__tour{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0  108px;
+  align-items:center;
+  }
+
+.tour__info{
+
+}
+
+/*tours styles end*/
 
